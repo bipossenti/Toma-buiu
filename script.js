@@ -36,35 +36,34 @@ function mostraPergunta() {
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.innerHTML = "";  // Limpar o conteúdo das alternativas
     mostraAlternativas();
 }
 
 function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
+        const botaoAlternativa = document.createElement("button");
+        botaoAlternativa.textContent = alternativa.texto;
+        botaoAlternativa.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativa);
     }
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
-    historiaFinal += afirmacoes + " ";
+    const afirmacao = aleatorio(opcaoSelecionada.afirmacao);
+    historiaFinal += afirmacao + " ";
     if (opcaoSelecionada.proxima !== undefined) {
         atual = opcaoSelecionada.proxima;
+        mostraPergunta();
     } else {
         mostraResultado();
-        return;
     }
-    mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = `Em Star wars, ${nome}`;
+    caixaPerguntas.textContent = `Em Star Wars, ${nome}`;
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.innerHTML = "";  // Limpar o conteúdo das alternativas
     caixaResultado.classList.add("mostrar");
     // Remove o evento antes de adicionar um novo
     botaoJogarNovamente.removeEventListener("click", jogaNovamente);
