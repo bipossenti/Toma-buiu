@@ -2,7 +2,7 @@
 
 :root {
     --cor-fundo: #01080E;
-    --cor-principal: #0B0D20 ;
+    --cor-principal: #0B0D20;
     --cor-secundaria: #212333;
     --cor-destaque: #2BDEFD;
     --cor-texto: #D7F9FF;
@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
@@ -26,7 +26,7 @@ body {
     padding: 20px;
 }
 
-h1, .caixa-perguntas, .caixa-resultado{
+h1, .caixa-perguntas, .caixa-resultado {
     font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -48,15 +48,8 @@ button:hover {
     color: var(--cor-principal);
 }
 
-.caixa-resultado{
-    display: none;
-}
+.caixa-resultado
 
-.caixa-resultado.mostrar{
-    display: block;
-}
-
-.caixa-alternativas{
     display: flex;
     flex-direction: column;
     gap: 10px;
