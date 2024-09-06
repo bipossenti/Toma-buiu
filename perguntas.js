@@ -13,7 +13,6 @@ export const perguntas = [
                 texto: "Uso minha força e autoridade para impor minha vontade!",
                 afirmacao: [
                     "Você seria **Darth Vader**!"
-           
                 ],
                 proxima: 2,
             },
@@ -44,7 +43,7 @@ export const perguntas = [
             {
                 texto: "Leal a amigos e aliados, mesmo que isso signifique sacrificar meus próprios interesses.",
                 afirmacao: [
-                    "aprende com suas experiências, "
+                    "aprende com suas experiências,"
                 ],
                 proxima: 3,
             },
@@ -61,7 +60,7 @@ export const perguntas = [
         enunciado: "Como você lida com o passado?",
         alternativas: [
             {
-                texto: "Aprendo com meus erros e busco redenção.  ",
+                texto: "Aprendo com meus erros e busco redenção.",
                 afirmacao: [
                     "sempre buscando fazer o bem."
                 ],
@@ -70,7 +69,7 @@ export const perguntas = [
             {
                 texto: "Minha história é um símbolo de poder e não me arrependo das minhas escolhas.",
                 afirmacao: [
-                    "você uma força poderosa e imponente."
+                    "Você é uma força poderosa e imponente."
                 ],
                 proxima: 6,
             },
@@ -96,12 +95,12 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "Se você se deparasse com um inimigo, qual seria sua abordagem??",
+        enunciado: "Se você se deparasse com um inimigo, qual seria sua abordagem?",
         alternativas: [
             {
                 texto: "Tentaria dialogar e encontrar um entendimento.",
                 afirmacao: [
-                    "é um dos personagens mais respeitados da saga Star Wars. "
+                    "é um dos personagens mais respeitados da saga Star Wars."
                 ],
                 proxima: 7,
             },
@@ -139,13 +138,13 @@ export const perguntas = [
             {
                 texto: "A verdadeira força vem da compaixão.",
                 afirmacao: [
-                    "Obi-Wan é um duelista habilidoso, conhecido por seu estilo de luta defensivo e pela famosa frase "Eu sou o mestre agora"."
+                    "Obi-Wan é um duelista habilidoso, conhecido por seu estilo de luta defensivo e pela famosa frase 'Eu sou o mestre agora'."
                 ],
             },
             {
                 texto: "Somente os fortes sobrevivem.",
                 afirmacao: [
-                    "temido por muitos, não apenas por suas habilidades de combate, mas pela sua presença imponente."
+                    "Temido por muitos, não apenas por suas habilidades de combate, mas pela sua presença imponente."
                 ],
             },
         ]
