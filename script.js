@@ -1,4 +1,3 @@
-
 import { aleatorio, nome } from './aleatorio.js';
 import { perguntas } from './perguntas.js';
 
@@ -63,7 +62,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = 'Em Harry Potter, ${nome}';
+    caixaPerguntas.textContent = ´Em Star wars, ${nome}´;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classList.add("mostrar");
