@@ -17,7 +17,7 @@ let historiaFinal = "";
 // Substituir nome nas perguntas antes de iniciar o jogo
 substituiNome();
 
-botaoIniciar.addEventListener('click', iniciaJogo);
+botaoIniciar.addEventListener('click', IniciaJogo);
 
 function iniciaJogo() {
     atual = 0;
